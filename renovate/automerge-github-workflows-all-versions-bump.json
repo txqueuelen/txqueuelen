@@ -1,0 +1,28 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "ignorePaths": [
+        "**/node_modules/**",
+        "**/bower_components/**",
+        "**/vendor/**",
+        "**/examples/**",
+        "**/__tests__/**",
+        "**/test/**",
+        "**/tests/**",
+        "**/__fixtures__/**"
+    ],
+    "printConfig": true,
+    "packageRules": [
+        {
+            "automerge": true,
+            "automergeType": "branch",
+            "pruneBranchAfterAutomerge": true,
+            "matchDatasources": [
+                "github-tags",
+                "github-runners"
+            ],
+            "matchFileNames": [
+                "^(workflow-templates|\\.github/workflows)/[^/]+\\.ya?ml$"
+            ]
+        }
+    ]
+}

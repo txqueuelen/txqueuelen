@@ -1,0 +1,29 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "ignorePaths": [
+        "**/node_modules/**",
+        "**/bower_components/**",
+        "**/vendor/**",
+        "**/examples/**",
+        "**/__tests__/**",
+        "**/test/**",
+        "**/tests/**",
+        "**/__fixtures__/**"
+    ],
+    "printConfig": true,
+    "packageRules": [
+        {
+            "matchUpdateTypes": [
+                "digest",
+                "pinDigest"
+            ],
+            "matchCurrentVersion": "!/^(0|v0)/",
+            "automerge": true,
+            "automergeType": "branch",
+            "pruneBranchAfterAutomerge": true,
+            "matchDatasources": [
+                "docker"
+            ]
+        }
+    ]
+}
