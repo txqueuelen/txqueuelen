@@ -18,9 +18,6 @@
             "pruneBranchAfterAutomerge": true,
             "matchManagers": [
                 "github-actions"
-            ],
-            "matchFileNames": [
-                "^(workflow-templates|\\.github/workflows)/[^/]+\\.ya?ml$"
             ]
         }
     ]
