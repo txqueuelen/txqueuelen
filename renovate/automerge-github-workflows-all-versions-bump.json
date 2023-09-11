@@ -16,10 +16,7 @@
             "automerge": true,
             "automergeType": "branch",
             "pruneBranchAfterAutomerge": true,
-            "matchDatasources": [
-                "github-tags",
-                "github-runners"
-            ],
+            "matchManagers": ["github-actions"],
             "matchFileNames": [
                 "^(workflow-templates|\\.github/workflows)/[^/]+\\.ya?ml$"
             ]
