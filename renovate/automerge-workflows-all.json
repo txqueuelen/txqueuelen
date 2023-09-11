@@ -16,9 +16,7 @@
             "automerge": true,
             "automergeType": "branch",
             "pruneBranchAfterAutomerge": true,
-            "matchManagers": [
-                "github-actions"
-            ]
+            "matchManagers": [ "github-actions" ]
         }
     ]
 }

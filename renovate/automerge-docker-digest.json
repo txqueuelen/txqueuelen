@@ -13,17 +13,12 @@
     "printConfig": true,
     "packageRules": [
         {
-            "matchUpdateTypes": [
-                "digest",
-                "pinDigest"
-            ],
+            "matchUpdateTypes": [ "digest", "pinDigest" ],
             "matchCurrentVersion": "!/^(0|v0)/",
             "automerge": true,
             "automergeType": "branch",
             "pruneBranchAfterAutomerge": true,
-            "matchDatasources": [
-                "docker"
-            ]
+            "matchDatasources": [ "docker" ]
         }
     ]
 }

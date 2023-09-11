@@ -13,9 +13,7 @@
     "printConfig": true,
     "packageRules": [
         {
-            "matchUpdateTypes": [
-                "patch"
-            ],
+            "matchUpdateTypes": [ "patch" ],
             "matchCurrentVersion": "!/^(0|v0)/",
             "automerge": true,
             "automergeType": "branch",

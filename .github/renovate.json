@@ -2,6 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base",
-    "github>txqueuelen/.github//renovate/automerge-github-workflows-all-versions-bump.json"
+    "github>txqueuelen/.github//renovate/automerge-workflows-all.json"
   ]
 }
