@@ -1,0 +1,20 @@
+name: Dummy workflow
+
+on:
+  push:
+    branches:
+      - main
+      - master
+      - renovate/**
+  pull_request:
+
+jobs:
+  dumy:
+    name: Build and push image
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo This workflow exists always gracefully so that renovate reads the success
+          echo and merge all updates automatically.
+
+          exit 0
