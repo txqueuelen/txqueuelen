@@ -32,4 +32,5 @@ jobs:
           push: ${{ inputs.push }}
           tags: ${{ inputs.tags }}
           cache-from: type=gha
+          platforms: linux/amd64,linux/arm64
           cache-to: type=gha,mode=max
